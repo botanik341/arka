@@ -1,0 +1,585 @@
+/* Arka – strona projektu. Paleta firmowa: morski granat + złoto. */
+
+:root {
+  /* Paleta Arka – morski + złoty (statek) */
+  --bg: #0f1923;
+  --bg-card: #152231;
+  --bg-alt: #1a2a3a;
+  --border: rgba(196, 154, 60, 0.35);
+  --text: #e2dcd0;
+  --text-muted: #a89f94;
+  --accent: #c49a3c;
+  --accent-amber: #e0a84c;
+  --accent-turquoise: #5cc4b0;
+  --accent-soft: rgba(196, 154, 60, 0.15);
+  --code-bg: #0a1018;
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(15, 25, 35, 0.95);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 42ch;
+  margin: 0 auto 0.5rem;
+}
+
+.hero-sub {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  opacity: 0.95;
+}
+
+.hero-sub strong {
+  color: var(--accent);
+}
+
+.plusy-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.plus-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(196, 154, 60, 0.4);
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+}
+
+.plus-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.hero-cta {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.hero-price em {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+/* Duże plusy – sekcja */
+.plusy-section {
+  padding: 2.5rem 0;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.plusy-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  color: var(--text);
+}
+
+.plusy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.plusy-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.35rem;
+  text-align: center;
+}
+
+.plusy-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent-soft);
+}
+
+.plusy-card-icon {
+  font-size: 1.75rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.plusy-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+}
+
+.plusy-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+
+.section--alt {
+  background: var(--bg-alt);
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+
+.section-lead {
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+}
+
+.beta-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0 0.25rem;
+  color: var(--text-muted);
+}
+
+.section--compact {
+  padding: 2rem 0;
+}
+
+/* Benefits (Oferta) */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.benefit-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.benefit-card:hover {
+  border-color: var(--accent);
+}
+
+.benefit-icon {
+  font-size: 1.75rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.benefit-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: var(--text);
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.45;
+}
+
+.offer-box {
+  background: var(--bg-card);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  text-align: center;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.offer-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.25rem;
+}
+
+.offer-price em {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+.offer-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: filter 0.2s;
+}
+
+.btn-cta:hover {
+  filter: brightness(1.1);
+}
+
+.btn-cta--hero {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Flow: Kup → Zapłać → Pobierz */
+.flow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.flow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.flow-num {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 50%;
+}
+
+.flow-step p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.offer-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.25rem;
+  color: var(--text);
+}
+
+.offer-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0.75rem 0 0.5rem;
+  line-height: 1.4;
+}
+
+.link-cta--small {
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+.link-cta {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-cta:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Intro cards */
+.intro-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+}
+
+.card--wide {
+  max-width: 100%;
+}
+
+.card p {
+  margin: 0;
+  color: var(--text);
+}
+
+.card code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--code-bg);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+/* Zwierzaki grid */
+.zwierzaki-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.zwierzak-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.zwierzak-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent-soft);
+}
+
+.zwierzak-card--highlight {
+  border-color: rgba(196, 154, 60, 0.5);
+  box-shadow: 0 0 0 1px var(--accent-soft);
+}
+
+.zwierzak-card--highlight:hover {
+  border-color: var(--accent);
+}
+
+.zwierzak-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--bg);
+  background: var(--accent);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.zwierzak-card--soon {
+  opacity: 0.85;
+}
+
+.zwierzak-card--soon .zwierzak-opis {
+  font-style: italic;
+}
+
+.zwierzak-emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.zwierzak-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+}
+
+.zwierzak-rola {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin: 0 0 0.5rem;
+}
+
+.zwierzak-opis {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Pipeline list */
+.pipeline-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text);
+}
+
+.pipeline-list li {
+  margin-bottom: 0.6rem;
+}
+
+.pipeline-list strong {
+  color: var(--accent);
+}
+
+.tech-note {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Tech list */
+.tech-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text);
+}
+
+.tech-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--code-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  color: var(--text-muted);
+}
