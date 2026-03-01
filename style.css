@@ -202,12 +202,20 @@ body {
   box-shadow: 0 12px 40px rgba(0,0,0,0.35), 0 0 24px var(--glow-malpa);
 }
 
-.hero-card-emoji {
-  font-size: 2.25rem;
+.hero-card-icon {
   display: block;
-  margin-bottom: 0.5rem;
-  line-height: 1;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.75rem;
+  color: inherit;
 }
+.hero-card-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hero-card--mamut .hero-card-icon { color: var(--accent-mamut); }
+.hero-card--malpa .hero-card-icon { color: var(--accent-malpa); }
 
 .hero-card-badge {
   position: absolute;
@@ -296,8 +304,17 @@ body {
 }
 
 .plus-icon {
-  font-size: 1rem;
-  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+.plus-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .hero-cta {
@@ -382,10 +399,15 @@ body {
 }
 
 .plusy-card-icon {
-  font-size: 1.9rem;
   display: block;
-  margin-bottom: 0.6rem;
-  line-height: 1;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 auto 0.6rem;
+  color: var(--accent);
+}
+.plusy-card-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .plusy-card h3 {
@@ -529,12 +551,20 @@ body {
   opacity: 0.88;
 }
 
-.zwierzak-emoji {
-  font-size: 2rem;
+.zwierzak-icon {
   display: block;
-  margin-bottom: 0.5rem;
-  line-height: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.6rem;
+  color: inherit;
 }
+.zwierzak-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.zwierzak-card--mamut .zwierzak-icon { color: var(--accent-mamut); }
+.zwierzak-card--malpa .zwierzak-icon { color: var(--accent-malpa); }
+.zwierzak-card--soon .zwierzak-icon { color: var(--text-muted); opacity: 0.8; }
 
 .zwierzak-card h3 {
   font-size: 1.2rem;
@@ -633,10 +663,15 @@ body {
 }
 
 .benefit-icon {
-  font-size: 1.8rem;
   display: block;
-  margin-bottom: 0.5rem;
-  line-height: 1;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto 0.5rem;
+  color: var(--accent);
+}
+.benefit-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .benefit-card h3 {
