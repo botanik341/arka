@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arka – Edytor z AI. Zwierzaki: Mamut & Małpa.</title>
   <meta name="description" content="Arka – edytor z AI. Persony Mamut i Małpa. Lokalnie, prywatnie, bez limitów zapytań." />
-  <!-- Ikona strony = to samo logo co w nagłówku, spójny styl -->
-  <link rel="icon" type="image/png" href="assets/arka-logo.png" sizes="32x32" />
-  <link rel="apple-touch-icon" href="assets/arka-logo.png" />
+  <!-- Ikona = sam symbol (łódka/arka), bez napisu -->
+  <link rel="icon" type="image/png" href="assets/arka-ikona-lodka.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/arka-ikona-lodka.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -29,9 +29,13 @@
 
   <header class="header">
     <div class="container">
-      <a href="#" class="logo">
-        <img src="assets/arka-logo.png" alt="" class="logo-img" width="32" height="32" />
-        <span class="logo-text">Arka</span>
+      <a href="#" class="logo" aria-label="Arka – strona główna">
+        <img src="assets/arka-ikona-lodka.png" alt="Arka" class="logo-img" width="32" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <svg class="logo-svg logo-svg--fallback" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="32" height="32" style="display:none">
+          <path d="M8 40 L12 44 L52 44 L56 40 L56 38 L52 34 L12 34 L8 38 Z" fill="#0d1219"/>
+          <path d="M16 34 L16 28 L22 28 L22 22 L42 22 L42 28 L48 28 L48 34 L16 34 Z" fill="#0d1219"/>
+          <path d="M24 22 L28 14 L36 14 L40 22 L24 22 Z" fill="#0d1219"/>
+        </svg>
       </a>
       <nav class="nav">
         <a href="#zwierzaki">Zwierzaki</a>
@@ -51,7 +55,15 @@
       <span class="hero-ember hero-ember--3" aria-hidden="true"></span>
       <div class="container">
         <p class="hero-label">Edytor z AI · persony z własną wiedzą</p>
-        <h1 class="hero-title">Arka</h1>
+        <div class="hero-title-row">
+          <img src="assets/arka-ikona-lodka.png" alt="" class="hero-title-icon" width="64" height="64" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+          <svg class="hero-title-icon-svg hero-title-icon-svg--fallback" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="64" height="64" style="display:none">
+            <path d="M8 40 L12 44 L52 44 L56 40 L56 38 L52 34 L12 34 L8 38 Z" fill="#0d1219"/>
+            <path d="M16 34 L16 28 L22 28 L22 22 L42 22 L42 28 L48 28 L48 34 L16 34 Z" fill="#0d1219"/>
+            <path d="M24 22 L28 14 L36 14 L40 22 L24 22 Z" fill="#0d1219"/>
+          </svg>
+          <h1 class="hero-title">Arka</h1>
+        </div>
         <p class="hero-unique">Arka + Zwierzaki. Połączenie nie z tego świata.</p>
         <p class="hero-tagline">Kod i FiveM. Lokalnie u Ciebie – prywatnie, bez limitów. Dwie persony na start: <strong>Mamut</strong> i <strong>Małpa</strong>.</p>
 
