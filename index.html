@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arka – Edytor z AI. Zwierzaki: Mamut & Małpa.</title>
-  <meta name="description" content="Arka – edytor z AI. Persony Mamut i Małpa. Lokalnie, prywatnie, bez limitów zapytań." />
+  <title>Arka – Edytor z AI (BETA). Zwierzaki AI: Mamut & Małpa.</title>
+  <meta name="description" content="Arka – edytor z AI, wersja BETA. Zwierzaki AI: Mamut i Małpa. Lokalnie, prywatnie, bez limitów. Kolejne persony w drodze." />
   <!-- Ikona = sam symbol (łódka/arka), bez napisu -->
   <link rel="icon" type="image/png" href="assets/arka-ikona-lodka.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/arka-ikona-lodka.png" />
@@ -30,18 +30,21 @@
   <header class="header">
     <div class="container">
       <a href="#" class="logo" aria-label="Arka – strona główna">
-        <img src="assets/arka-ikona-lodka.png" alt="Arka" class="logo-img" width="32" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <img src="assets/arka-ikona-lodka.png" alt="" class="logo-img" width="32" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
         <svg class="logo-svg logo-svg--fallback" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="32" height="32" style="display:none">
-          <path d="M8 40 L12 44 L52 44 L56 40 L56 38 L52 34 L12 34 L8 38 Z" fill="#0d1219"/>
-          <path d="M16 34 L16 28 L22 28 L22 22 L42 22 L42 28 L48 28 L48 34 L16 34 Z" fill="#0d1219"/>
-          <path d="M24 22 L28 14 L36 14 L40 22 L24 22 Z" fill="#0d1219"/>
+          <path d="M8 40 L12 44 L52 44 L56 40 L56 38 L52 34 L12 34 L8 38 Z" fill="currentColor"/>
+          <path d="M16 34 L16 28 L22 28 L22 22 L42 22 L42 28 L48 28 L48 34 L16 34 Z" fill="currentColor"/>
+          <path d="M24 22 L28 14 L36 14 L40 22 L24 22 Z" fill="currentColor"/>
         </svg>
+        <span class="logo-text">Arka</span>
       </a>
+      <span class="beta-badge" aria-label="Wersja wczesnego dostępu">BETA · wczesny dostęp</span>
       <nav class="nav">
-        <a href="#zwierzaki">Zwierzaki</a>
+        <a href="#zwierzaki">Zwierzaki AI</a>
         <a href="#zalety-vs">Zalety</a>
         <a href="#czym-jest">Czym jest</a>
         <a href="#oferta">Oferta</a>
+        <a href="#regulamin">Regulamin</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
     </div>
@@ -58,17 +61,17 @@
         <div class="hero-title-row">
           <img src="assets/arka-ikona-lodka.png" alt="" class="hero-title-icon" width="64" height="64" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
           <svg class="hero-title-icon-svg hero-title-icon-svg--fallback" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="64" height="64" style="display:none">
-            <path d="M8 40 L12 44 L52 44 L56 40 L56 38 L52 34 L12 34 L8 38 Z" fill="#0d1219"/>
-            <path d="M16 34 L16 28 L22 28 L22 22 L42 22 L42 28 L48 28 L48 34 L16 34 Z" fill="#0d1219"/>
-            <path d="M24 22 L28 14 L36 14 L40 22 L24 22 Z" fill="#0d1219"/>
+            <path d="M8 40 L12 44 L52 44 L56 40 L56 38 L52 34 L12 34 L8 38 Z" fill="currentColor"/>
+            <path d="M16 34 L16 28 L22 28 L22 22 L42 22 L42 28 L48 28 L48 34 L16 34 Z" fill="currentColor"/>
+            <path d="M24 22 L28 14 L36 14 L40 22 L24 22 Z" fill="currentColor"/>
           </svg>
           <h1 class="hero-title">Arka</h1>
         </div>
-        <p class="hero-unique">Arka + Zwierzaki. Połączenie nie z tego świata.</p>
-        <p class="hero-tagline">Kod i FiveM. Lokalnie u Ciebie – prywatnie, bez limitów. Dwie persony na start: <strong>Mamut</strong> i <strong>Małpa</strong>.</p>
+        <p class="hero-beta">Wersja BETA · wczesny dostęp</p>
+        <p class="hero-tagline">Kod i FiveM. Lokalnie u Ciebie – prywatnie, bez limitów. Na start: <strong>Mamut</strong> i <strong>Małpa</strong>. Kolejne persony w drodze.</p>
 
         <div class="hero-zwierzaki">
-          <h2 class="hero-zwierzaki-title">Zwierzaki na pierwszy strzał</h2>
+          <h2 class="hero-zwierzaki-title">Zwierzaki AI na pierwszy strzał</h2>
           <div class="hero-cards">
             <article class="hero-card hero-card--mamut">
               <span class="hero-card-icon hero-card-icon--code" aria-hidden="true">
@@ -125,14 +128,14 @@
     <section id="zalety-vs" class="section section--fire">
       <div class="container">
         <h2 class="vs-title">Nasze zalety – czego nie ma u innych</h2>
-        <p class="section-lead vs-lead">Lokalnie. Bez limitów. Zwierzaki. Po polsku. Jedna cena.</p>
+        <p class="section-lead vs-lead">Lokalnie. Bez limitów. Zwierzaki AI. Po polsku. Jedna cena.</p>
         <div class="vs-grid">
           <div class="vs-card vs-card--us">
             <h3>Arka</h3>
             <ul>
               <li><strong>Lokalnie</strong> – AI na Twoim PC (Ollama), zero chmury</li>
               <li><strong>Bez limitu</strong> zapytań – używasz ile chcesz</li>
-              <li><strong>Zwierzaki</strong> – Mamut, Małpa, Gepard, Lis – persony, których inni nie mają</li>
+              <li><strong>Zwierzaki AI</strong> – Mamut, Małpa – persony z własną wiedzą, których inni nie mają</li>
               <li><strong>Po polsku</strong> – odpowiedzi w języku polskim</li>
               <li><strong>16 zł / miesiąc</strong> – jedna cena, bez ukrytych limitów</li>
               <li><strong>Prywatność</strong> – kod i projekty nie opuszczają dysku</li>
@@ -189,7 +192,7 @@
             <p><strong>Arka</strong> to edytor z AI: kod i diagnostyka na wysokim poziomie (m.in. FiveM, QBCore). Aplikacja desktopowa działająca lokalnie z <strong>Ollamą</strong> – Twoje dane zostają u Ciebie.</p>
           </div>
           <div class="card card--wide">
-            <p><strong>Zwierzaki</strong> to persony z własną wiedzą. <strong>Mamut</strong> (kodowanie) i <strong>Małpa</strong> (FiveM/QBCore) na start – odpowiedzi po polsku, bez limitów, lokalnie na Twoim PC.</p>
+            <p><strong>Zwierzaki AI</strong> to persony z własną wiedzą. <strong>Mamut</strong> (kodowanie) i <strong>Małpa</strong> (FiveM/QBCore) na start – odpowiedzi po polsku, bez limitów, lokalnie na Twoim PC.</p>
           </div>
         </div>
       </div>
@@ -197,8 +200,8 @@
 
     <section id="zwierzaki" class="section">
       <div class="container">
-        <h2>Wszystkie zwierzaki</h2>
-        <p class="section-lead">Cztery persony, każda z własną rolą i wiedzą. Na start w ofercie: <strong>Mamut</strong> (już dostępny) i <strong>Małpa</strong> (niedługo).</p>
+        <h2>Wszystkie Zwierzaki AI</h2>
+        <p class="section-lead">Na start w ofercie: <strong>Mamut</strong> (już dostępny) i <strong>Małpa</strong> (niedługo). Kolejne persony w drodze.</p>
         <div class="zwierzaki-grid">
           <article class="zwierzak-card zwierzak-card--mamut">
             <span class="zwierzak-badge zwierzak-badge--live">Już dostępny</span>
@@ -213,18 +216,6 @@
             <h3>Małpa – FiveM / QBCore</h3>
             <p class="zwierzak-rola">QBCore, FiveM, serwery GTA V</p>
             <p class="zwierzak-opis">Specjalista od QBCore i FiveM. Eventy, server.cfg, resource'y, bazy (oxmysql), logi, txAdmin. Wskazuje braki w dependency i walidacji server-side.</p>
-          </article>
-          <article class="zwierzak-card zwierzak-card--soon" data-zwierzak="gepard">
-            <span class="zwierzak-icon zwierzak-icon--speed" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 24h12l-4 12 16-20h-12l4-12"/></svg></span>
-            <h3>Gepard</h3>
-            <p class="zwierzak-rola">Egzamin 30 sekund · WWW</p>
-            <p class="zwierzak-opis">Wkrótce w ofercie. Szybkie karty, 1 fix + 1 test. HTML/CSS, SEO, prototypy.</p>
-          </article>
-          <article class="zwierzak-card zwierzak-card--soon" data-zwierzak="lis">
-            <span class="zwierzak-icon zwierzak-icon--focus" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="10"/><path d="M24 14v4M24 30v4M14 24h4M30 24h4"/></svg></span>
-            <h3>Lis</h3>
-            <p class="zwierzak-rola">Diagnoza nieoczywista · grafika</p>
-            <p class="zwierzak-opis">Wkrótce w ofercie. Kontrhipotezy, pułapki, grafika i multimedia.</p>
           </article>
         </div>
       </div>
@@ -270,7 +261,7 @@
         <div class="offer-box">
           <p class="offer-price"><strong>16 zł</strong> <em>/ miesiąc</em></p>
           <p class="offer-desc">Edytor z AI i persony. Pobranie po opłaceniu – link mailem.</p>
-          <a href="mailto:kontakt@example.com?subject=Kupno subskrypcji Arka" class="btn-cta">Kup subskrypcję</a>
+          <a href="mailto:ujot@interia.pl?subject=Kupno subskrypcji Arka" class="btn-cta">Kup subskrypcję</a>
           <p class="offer-note">Napisz – wyślemy link do płatności. Po opłaceniu od razu dostaniesz link do pobrania.</p>
           <a href="#kontakt" class="link-cta link-cta--small">Masz pytania? Napisz do nas</a>
         </div>
@@ -294,17 +285,61 @@
 
     </main>
 
-  <section id="kontakt" class="section section--alt section--compact">
+  <section id="regulamin" class="section section--alt">
+    <div class="container">
+      <h2>Regulamin i płatności</h2>
+      <p class="section-lead">Wersja BETA – wczesny dostęp. Poniżej najważniejsze informacje o usłudze, płatnościach i odpowiedzialności.</p>
+
+      <div class="regulamin-grid">
+        <div class="regulamin-block">
+          <h3>1. Usługa i BETA</h3>
+          <p>Arka jest w fazie <strong>wczesnego dostępu (BETA)</strong>. Oznacza to, że aplikacja może zawierać błędy, a funkcje (w tym nowe Zwierzaki AI) są rozwijane. Usługa dostarczana jest w stanie „<strong>jak jest</strong>” (as is). Kupując subskrypcję, akceptujesz ten stan i wspierasz rozwój projektu.</p>
+        </div>
+        <div class="regulamin-block regulamin-block--highlight">
+          <h3>2. AI – ograniczenia i wyłączenie odpowiedzialności</h3>
+          <p>Wyniki i sugestie generowane przez AI (w tym Zwierzaki AI) <strong>mogą zawierać błędy, nieścisłości lub mylące informacje</strong>. Modele AI mają ograniczenia: mogą mylić się w złożonych zadaniach, w niuansach języka lub w kodzie. <strong>Jesteś odpowiedzialny za weryfikację</strong> każdej sugestii przed użyciem – w tym za sprawdzenie kodu, logiki i bezpieczeństwa. Nie ponosimy odpowiedzialności za jakiekolwiek szkody wynikłe z użycia Arki lub sugestii AI – w tym za uszkodzenie projektów, utratę danych, błędy w kodzie, straty biznesowe czy problemy na serwerze. Korzystasz z usługi <strong>na własną odpowiedzialność</strong>.</p>
+        </div>
+        <div class="regulamin-block">
+          <h3>3. Ollama i oprogramowanie zewnętrzne</h3>
+          <p>Arka korzysta z <strong>Ollama</strong> do uruchamiania modeli AI lokalnie na Twoim komputerze. Ollama to oddzielny projekt (<a href="https://ollama.com" target="_blank" rel="noopener noreferrer">ollama.com</a>), objęty własną licencją (m.in. MIT). Użytkownik zobowiązuje się do zapoznania się z warunkami użytkowania Ollama i używania jej zgodnie z nimi. Płatności za Arkę dotyczą wyłącznie dostępu do aplikacji Arka; Ollama jest bezpłatna i instalowana oddzielnie.</p>
+        </div>
+        <div class="regulamin-block">
+          <h3>4. Subskrypcja i płatności</h3>
+          <p><strong>16 zł / miesiąc</strong> – abonament miesięczny. Płatność przelewem lub inną metodą podaną przy zakupie (np. przez operatora płatności). Link do pobrania Arki wysyłany jest <strong>po zaksięgowaniu płatności</strong> na adres e-mail podany przy zamówieniu. Regulamin operatora płatności obowiązuje dodatkowo w zakresie transakcji.</p>
+        </div>
+        <div class="regulamin-block">
+          <h3>5. Odstąpienie i zwroty</h3>
+          <p>Usługa cyfrowa (dostęp do aplikacji) – zgodnie z prawem konsumenckim możesz odstąpić od umowy w 14 dni bez podania przyczyny. W przypadku wcześniejszego użycia linku do pobrania – po ustaleniu z nami. Reklamacje: mail na adres kontaktowy.</p>
+        </div>
+        <div class="regulamin-block">
+          <h3>6. Dane i prywatność</h3>
+          <p>Arka działa <strong>lokalnie na Twoim komputerze</strong> – kod i projekty nie są wysyłane na nasze serwery. Przetwarzamy tylko dane niezbędne do obsługi płatności i kontaktu (e-mail, ewentualnie NIP przy fakturze). Nie udostępniamy danych osobowych podmiotom trzecim.</p>
+        </div>
+        <div class="regulamin-block">
+          <h3>7. Faktura</h3>
+          <p>Na życzenie wystawiamy fakturę VAT. Podaj dane (NIP, nazwa, adres) przy zamówieniu lub napisz do nas po opłaceniu.</p>
+        </div>
+      </div>
+      <p class="regulamin-note">Masz wątpliwości? <a href="#kontakt" class="link-cta">Skontaktuj się z nami</a> – chętnie wyjaśnimy.</p>
+    </div>
+  </section>
+
+  <section id="kontakt" class="section section--compact">
     <div class="container">
       <h2>Kontakt</h2>
       <p class="section-lead">Pytania przed zakupem albo problem z dostępem? Napisz – odpowiemy i pomożemy.</p>
-      <p><a href="mailto:kontakt@example.com" class="link-cta">kontakt@example.com</a> <span class="muted">(podmień na swój adres)</span></p>
+      <p><a href="mailto:ujot@interia.pl" class="link-cta">ujot@interia.pl</a></p>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <p><strong>Arka</strong> – edytor z AI. Lokalnie, prywatnie, bez limitów.</p>
+      <p><strong>Arka</strong> – edytor z AI (BETA). Lokalnie, prywatnie, bez limitów.</p>
+      <p class="footer-links">
+        <a href="#regulamin">Regulamin i płatności</a>
+        <span class="footer-sep">·</span>
+        <a href="#kontakt">Kontakt</a>
+      </p>
       <p class="footer-copy">&copy; Arka. Wszelkie prawa zastrzeżone.</p>
     </div>
   </footer>
