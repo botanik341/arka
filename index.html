@@ -4,23 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arka – Edytor z AI. Zwierzaki: Mamut & Małpa.</title>
-  <meta name="description" content="Arka – edytor z AI. Mamut już dostępny (kod), Małpa niedługo (FiveM/QBCore). Persony z ZAP.NAUK. Lokalnie, prywatnie, bez limitów." />
+  <meta name="description" content="Arka – edytor z AI. Persony Mamut i Małpa. Lokalnie, prywatnie, bez limitów zapytań." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-mesh" aria-hidden="true"></div>
+  <!-- Tło: warstwy ognia – wyraźny, animowany ogień -->
+  <div class="bg-wrap" aria-hidden="true">
+    <div class="bg-base"></div>
+    <div class="bg-fire bg-fire--1"></div>
+    <div class="bg-fire bg-fire--2"></div>
+    <div class="bg-fire bg-fire--3"></div>
+    <div class="bg-fire bg-fire--4"></div>
+    <div class="bg-mesh"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-vignette"></div>
+    <div class="bg-noise"></div>
+  </div>
 
   <header class="header">
     <div class="container">
       <a href="#" class="logo"><span class="logo-icon">◇</span> Arka</a>
       <nav class="nav">
         <a href="#zwierzaki">Zwierzaki</a>
+        <a href="#zalety-vs">Zalety</a>
         <a href="#czym-jest">Czym jest</a>
         <a href="#oferta">Oferta</a>
-        <a href="#arka-beta">Arka BETA</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
     </div>
@@ -28,9 +39,14 @@
 
   <main>
     <section class="hero">
+      <!-- Dekoracyjne „żary” – subtelne kule światła -->
+      <span class="hero-ember hero-ember--1" aria-hidden="true"></span>
+      <span class="hero-ember hero-ember--2" aria-hidden="true"></span>
+      <span class="hero-ember hero-ember--3" aria-hidden="true"></span>
       <div class="container">
         <p class="hero-label">Edytor z AI · persony z własną wiedzą</p>
         <h1 class="hero-title">Arka</h1>
+        <p class="hero-unique">Arka + Zwierzaki. Połączenie nie z tego świata.</p>
         <p class="hero-tagline">Kod i FiveM. Lokalnie u Ciebie – prywatnie, bez limitów. Dwie persony na start: <strong>Mamut</strong> i <strong>Małpa</strong>.</p>
 
         <div class="hero-zwierzaki">
@@ -71,11 +87,50 @@
           <span class="plus-item"><span class="plus-icon plus-icon--lock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></span> Prywatność</span>
           <span class="plus-item"><span class="plus-icon plus-icon--screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span> Lokalnie</span>
           <span class="plus-item"><span class="plus-icon plus-icon--infinity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 8a6 6 0 00-10 4 6 6 0 0010 4 6 6 0 00-10-4 6 6 0 0010-4"/></svg></span> Bez limitu</span>
-          <span class="plus-item"><span class="plus-icon plus-icon--zap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span> ZAP.NAUK</span>
+          <span class="plus-item"><span class="plus-icon plus-icon--zap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span> Wiedza person</span>
         </div>
         <div class="hero-cta">
           <span class="hero-price">16 zł <em>/ miesiąc</em></span>
           <a href="#oferta" class="btn-cta btn-cta--hero">Kup subskrypcję</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Falisty separator – ogień przechodzi w treść -->
+    <div class="wave-wrap" aria-hidden="true">
+      <svg class="wave-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path class="wave-path wave-path--fire" d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"/>
+        <path class="wave-path wave-path--dark" d="M0,70 C250,20 950,100 1200,70 L1200,120 L0,120 Z"/>
+      </svg>
+    </div>
+
+    <section id="zalety-vs" class="section section--fire">
+      <div class="container">
+        <h2 class="vs-title">Nasze zalety – czego nie ma u innych</h2>
+        <p class="section-lead vs-lead">Lokalnie. Bez limitów. Zwierzaki. Po polsku. Jedna cena.</p>
+        <div class="vs-grid">
+          <div class="vs-card vs-card--us">
+            <h3>Arka</h3>
+            <ul>
+              <li><strong>Lokalnie</strong> – AI na Twoim PC (Ollama), zero chmury</li>
+              <li><strong>Bez limitu</strong> zapytań – używasz ile chcesz</li>
+              <li><strong>Zwierzaki</strong> – Mamut, Małpa, Gepard, Lis – persony, których inni nie mają</li>
+              <li><strong>Po polsku</strong> – odpowiedzi w języku polskim</li>
+              <li><strong>16 zł / miesiąc</strong> – jedna cena, bez ukrytych limitów</li>
+              <li><strong>Prywatność</strong> – kod i projekty nie opuszczają dysku</li>
+            </ul>
+          </div>
+          <div class="vs-card vs-card--them">
+            <h3>Inni (Cursor, Windsurf…)</h3>
+            <ul>
+              <li>Chmura, subskrypcje, limity requestów</li>
+              <li>Plany Pro / Business, dopłaty za „premium”</li>
+              <li>Jedna asystent – bez person z własną wiedzą</li>
+              <li>Głównie angielski</li>
+              <li>Wyższe ceny, limity zapytań</li>
+              <li>Dane mogą iść do zewnętrznych modeli</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -102,7 +157,7 @@
           <div class="plusy-card">
             <span class="plusy-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
             <h3>Unikalne AI</h3>
-            <p>Persony z bazą wiedzy ZAP.NAUK. <strong>Mamut</strong> (kod) i <strong>Małpa</strong> (FiveM/QBCore) – każda wie, co robi.</p>
+            <p>Persony z własną wiedzą. <strong>Mamut</strong> (kod) i <strong>Małpa</strong> (FiveM/QBCore) – każda wie, co robi.</p>
           </div>
         </div>
       </div>
@@ -113,10 +168,10 @@
         <h2>Czym jest Arka</h2>
         <div class="intro-grid">
           <div class="card card--wide">
-            <p><strong>Arka</strong> to edytor z AI: kod i diagnostyka na wysokim poziomie (m.in. FiveM, QBCore). Aplikacja desktopowa w <strong>Pythonie</strong> z interfejsem <strong>tkinter</strong>, połączona z lokalną <strong>Ollamą</strong>. Powstała na bazie naszej wewnętrznej wersji (Arka BETA), w wersji dla klienta – bez narzędzi treningu.</p>
+            <p><strong>Arka</strong> to edytor z AI: kod i diagnostyka na wysokim poziomie (m.in. FiveM, QBCore). Aplikacja desktopowa działająca lokalnie z <strong>Ollamą</strong> – Twoje dane zostają u Ciebie.</p>
           </div>
           <div class="card card--wide">
-            <p><strong>Zwierzaki</strong> to persony z własną bazą wiedzy <code>ZAP.NAUK</code>. <strong>Mamut</strong> (kodowanie) i <strong>Małpa</strong> (FiveM/QBCore) na start – odpowiedzi po polsku, bez limitów, lokalnie na Twoim PC.</p>
+            <p><strong>Zwierzaki</strong> to persony z własną wiedzą. <strong>Mamut</strong> (kodowanie) i <strong>Małpa</strong> (FiveM/QBCore) na start – odpowiedzi po polsku, bez limitów, lokalnie na Twoim PC.</p>
           </div>
         </div>
       </div>
@@ -125,7 +180,7 @@
     <section id="zwierzaki" class="section">
       <div class="container">
         <h2>Wszystkie zwierzaki</h2>
-        <p class="section-lead">Cztery persony, każda z własną rolą i bazą ZAP.NAUK. Na start w ofercie: <strong>Mamut</strong> (już dostępny) i <strong>Małpa</strong> (niedługo).</p>
+        <p class="section-lead">Cztery persony, każda z własną rolą i wiedzą. Na start w ofercie: <strong>Mamut</strong> (już dostępny) i <strong>Małpa</strong> (niedługo).</p>
         <div class="zwierzaki-grid">
           <article class="zwierzak-card zwierzak-card--mamut">
             <span class="zwierzak-badge zwierzak-badge--live">Już dostępny</span>
@@ -196,7 +251,7 @@
         </div>
         <div class="offer-box">
           <p class="offer-price"><strong>16 zł</strong> <em>/ miesiąc</em></p>
-          <p class="offer-desc">Edytor z AI, zwierzaki, ZAP.NAUK. Pobranie po opłaceniu – link mailem.</p>
+          <p class="offer-desc">Edytor z AI i persony. Pobranie po opłaceniu – link mailem.</p>
           <a href="mailto:kontakt@example.com?subject=Kupno subskrypcji Arka" class="btn-cta">Kup subskrypcję</a>
           <p class="offer-note">Napisz – wyślemy link do płatności. Po opłaceniu od razu dostaniesz link do pobrania.</p>
           <a href="#kontakt" class="link-cta link-cta--small">Masz pytania? Napisz do nas</a>
@@ -207,47 +262,19 @@
     <section id="dla-klienta" class="section">
       <div class="container">
         <h2>Co dostajesz</h2>
-        <p class="section-lead">Ten sam edytor i zwierzaki co w Arce BETA – <strong>bez</strong> opcji treningu neuronowego.</p>
+        <p class="section-lead">Edytor z AI i persony – lokalnie, bez limitów.</p>
         <ul class="tech-list">
           <li>Edytor kodu z integracją AI (chat, kontekst projektu)</li>
           <li><strong>Mamut</strong> (już dostępny) i <strong>Małpa</strong> (niedługo) – przełączanie person</li>
-          <li>Baza wiedzy ZAP.NAUK na personę (gotowe lekcje/karty)</li>
+          <li>Persony z własną wiedzą</li>
           <li><strong>Prywatność i lokalnie</strong> – Ollama na Twoim PC</li>
           <li><strong>Bez limitu</strong> zapytań</li>
-          <li>Python, tkinter – aplikacja desktopowa</li>
+          <li>Aplikacja desktopowa</li>
         </ul>
       </div>
     </section>
 
-    <section id="arka-beta" class="section section--alt">
-      <div class="container">
-        <h2>Arka BETA – wersja studia</h2>
-        <p class="section-lead">Wewnętrzna wersja z pełnym pipeline’em treningu neuronowego. <strong>Nie</strong> jest częścią produktu dla klienta – służy nam do rozwijania wiedzy zwierzaków i modeli.</p>
-        <h3 class="beta-subtitle">Pipeline treningu neuronowego</h3>
-        <p class="section-lead">Kolejność: przemiał → psucie → pary zadań → neuronowa run 1 → neuronowa run 2.</p>
-        <ol class="pipeline-list">
-          <li><strong>Przemiał całość</strong> – Ollama 32B poprawia lekcje (oryginał→poprawiony).</li>
-          <li><strong>Psucie całość</strong> – Ollama 14B „psuje” lekcje; pary: zepsuta→oryginał.</li>
-          <li><strong>Pary zadań</strong> – Run 1 i Run 2 (więcej wariantów + pytania łączone).</li>
-          <li><strong>Neuronowa 1. run</strong> – eksport phase 1 → full fine-tuning 4B.</li>
-          <li><strong>Neuronowa 2. run</strong> – eksport phase 2 → fine-tuning 4B.</li>
-        </ol>
-        <p class="tech-note">Dzień Treningowy, eksport danych, skrypty CLI. Na 32 GB RAM trening 4B wchodzi; 7B – opcja LoRA w dokumentacji.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Stack (produkt)</h2>
-        <ul class="tech-list">
-          <li>Python, tkinter (UI)</li>
-          <li>Ollama – lokalne modele (np. qwen2.5)</li>
-          <li>ZAP.NAUK – plik wiedzy na personę, ładowany do kontekstu</li>
-          <li>Cztery zwierzaki z osobnymi promptami i rolami</li>
-        </ul>
-      </div>
-    </section>
-  </main>
+    </main>
 
   <section id="kontakt" class="section section--alt section--compact">
     <div class="container">
@@ -259,7 +286,8 @@
 
   <footer class="footer">
     <div class="container">
-      <p><strong>Arka</strong> – edytor z AI (produkt dla klienta). <strong>Arka BETA</strong> – wersja studia z treningiem neuronowym.</p>
+      <p><strong>Arka</strong> – edytor z AI. Lokalnie, prywatnie, bez limitów.</p>
+      <p class="footer-copy">&copy; Arka. Wszelkie prawa zastrzeżone.</p>
     </div>
   </footer>
 </body>
